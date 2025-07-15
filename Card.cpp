@@ -1,5 +1,6 @@
 #include "Card.h"
 #include <iostream>
+#include <format>
 
 
 
@@ -7,23 +8,23 @@ std::string Card::ColortoString()
 {
     switch(color) {
         case Color::RED:
-        return "R";
+        return "RED";
         break;
         
         case Color::GREEN:
-        return "G";
+        return "GREEN";
         break;
         
         case Color::BLUE:
-        return "B";
+        return "BLUE";
         break;
        
         case Color::YELLOW:
-        return "Y";
+        return "YELLOW";
         break;
         
         case Color::NONE:
-        return "W"; // Wild
+        return "ANY"; // Wild
         break;
     }
 
@@ -64,11 +65,11 @@ std::string Card::LabeltoString()
     switch(label)
     {
         case Label::Skip:
-        return "S";
+        return "SKIP";
         break;
 
         case Label::Reverse:
-        return "R";
+        return "REVERSE";
         break;
 
         case Label::DrawTwo:
@@ -76,11 +77,11 @@ std::string Card::LabeltoString()
         break;
 
         case Label::Wild:
-        return "W";
+        return "WILD";
         break;
 
         case Label::WildDrawFour:
-        return "+4";
+        return "WILD +4";
         break;
     }
 
@@ -91,4 +92,16 @@ std::string Card::LabeltoString()
 void Card::print()
 {
     std::cout << "|" << Card::ColortoString() << Card::LabeltoString() << "|";
+}
+
+void Card::printFancy() {
+    std::string colorStr = ColortoString();
+    std::string labelStr = LabeltoString();
+
+    std::cout << std::format("┌───────────┐\n");
+    std::cout << std::format("│{: ^11}│\n", "");           // Empty line
+    std::cout << std::format("│{: ^11}│\n", colorStr);      // Center color
+    std::cout << std::format("│{: ^11}│\n", labelStr);      // Center label
+    std::cout << std::format("│{: ^11}│\n", "");           // Empty line
+    std::cout << std::format("└───────────┘\n");
 }

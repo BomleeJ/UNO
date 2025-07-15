@@ -4,7 +4,12 @@
 
 
 
-PlayerDeck::PlayerDeck(DrawDeck& Drawdeck)
+PlayerDeck::PlayerDeck()
+{
+
+}
+
+void PlayerDeck::initial_fill(DrawDeck& Drawdeck)
 {
     int start_cards = 7;
     for(int i = 0; i < start_cards; i++)
@@ -12,6 +17,11 @@ PlayerDeck::PlayerDeck(DrawDeck& Drawdeck)
         Card* card = Drawdeck.draw();
         deck.push_back(card); 
     }
+}
+
+void PlayerDeck::add(Card* card)
+{
+    deck.push_back(card);
 }
 
 void PlayerDeck::print()
@@ -36,8 +46,9 @@ Card* PlayerDeck::remove(size_t idx)
     return nullptr;
 }
 
-PlayableCards PlayerDeck::filter_playable(Card* other)
+PlayableCards PlayerDeck::filter_playable(DiscardPile& pile)
 {
+    Card* other = pile.top();
     PlayableCards playable;
     int idx = 0;
     for (Card* card : deck)
@@ -51,7 +62,7 @@ PlayableCards PlayerDeck::filter_playable(Card* other)
     return playable;
 }
 
-void PlayerDeck::print(PlayableCards playable)
+void PlayerDeck::printPlayable(PlayableCards playable)
 {
     for (const auto [key, value] : playable)
     {
@@ -59,6 +70,11 @@ void PlayerDeck::print(PlayableCards playable)
         value->print();
         std::cout << std::endl;
     }
+}
+
+bool PlayerDeck::empty()
+{
+    return deck.empty();
 }
 
 PlayerDeck::~PlayerDeck()

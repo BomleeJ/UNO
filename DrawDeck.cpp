@@ -23,7 +23,6 @@ DrawDeck::DrawDeck()
 
     shuffle();
 
-
 }
 
 void DrawDeck::shuffle()

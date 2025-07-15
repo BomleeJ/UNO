@@ -1,5 +1,7 @@
+#pragma once
 #include "Card.h"
 #include "DrawDeck.h"
+#include "DiscardPile.h"
 #include <list>
 #include <map>
 
@@ -11,16 +13,22 @@ private:
     std::list<Card*> deck; 
 
 public:
-    PlayerDeck(DrawDeck& deck);
+    PlayerDeck();
 
     //filters card in the player deck 
-    PlayableCards filter_playable(Card* other);
+    PlayableCards filter_playable(DiscardPile& pile);
+
+    void initial_fill(DrawDeck& deck);
+
+    void add(Card* card);
 
     Card* remove(size_t idx);
 
+    bool empty();
+
     void print();
 
-    void print(PlayableCards playable);
+    void printPlayable(PlayableCards playable);
 
     ~PlayerDeck();
     
