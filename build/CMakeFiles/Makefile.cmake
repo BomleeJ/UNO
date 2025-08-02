@@ -101,4 +101,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
   "tests/CMakeFiles/test_card.dir/DependInfo.cmake"
   "tests/CMakeFiles/test_drawdeck.dir/DependInfo.cmake"
+  "tests/CMakeFiles/test_playerdeck.dir/DependInfo.cmake"
+  "tests/CMakeFiles/test_discardpile.dir/DependInfo.cmake"
+  "tests/CMakeFiles/test_humanplayer.dir/DependInfo.cmake"
   )

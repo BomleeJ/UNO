@@ -262,6 +262,45 @@ test_drawdeck/fast:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_drawdeck.dir/build.make tests/CMakeFiles/test_drawdeck.dir/build
 .PHONY : test_drawdeck/fast
 
+#=============================================================================
+# Target rules for targets named test_playerdeck
+
+# Build rule for target.
+test_playerdeck: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_playerdeck
+.PHONY : test_playerdeck
+
+# fast build rule for target.
+test_playerdeck/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_playerdeck.dir/build.make tests/CMakeFiles/test_playerdeck.dir/build
+.PHONY : test_playerdeck/fast
+
+#=============================================================================
+# Target rules for targets named test_discardpile
+
+# Build rule for target.
+test_discardpile: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_discardpile
+.PHONY : test_discardpile
+
+# fast build rule for target.
+test_discardpile/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_discardpile.dir/build.make tests/CMakeFiles/test_discardpile.dir/build
+.PHONY : test_discardpile/fast
+
+#=============================================================================
+# Target rules for targets named test_humanplayer
+
+# Build rule for target.
+test_humanplayer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_humanplayer
+.PHONY : test_humanplayer
+
+# fast build rule for target.
+test_humanplayer/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_humanplayer.dir/build.make tests/CMakeFiles/test_humanplayer.dir/build
+.PHONY : test_humanplayer/fast
+
 src/Card.o: src/Card.cpp.o
 .PHONY : src/Card.o
 
@@ -473,7 +512,10 @@ help:
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... test_card"
+	@echo "... test_discardpile"
 	@echo "... test_drawdeck"
+	@echo "... test_humanplayer"
+	@echo "... test_playerdeck"
 	@echo "... src/Card.o"
 	@echo "... src/Card.i"
 	@echo "... src/Card.s"

@@ -8,6 +8,10 @@ void DiscardPile::add(std::unique_ptr<Card> card)
 
 const Card& DiscardPile::top()
 {
+    if (deck.empty())
+    {
+        throw std::out_of_range("Discard pile is empty");
+    }
     return *deck.back();
 }
 

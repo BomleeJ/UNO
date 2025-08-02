@@ -33,6 +33,11 @@ void PlayerDeck::print()
     }
 }
 
+size_t PlayerDeck::size()
+{
+    return deck.size();
+}
+
 std::unique_ptr<Card> PlayerDeck::remove(size_t idx)
 {   
     if (idx >= deck.size())
@@ -53,7 +58,7 @@ PlayableCards PlayerDeck::filter_playable(DiscardPile& pile)
     int idx = 0;
     for (const auto& card : deck)
     {
-        if(card->isvalid(other));
+        if(card->isvalid(other))
         {
             playable[idx] = card.get();
         }

@@ -199,6 +199,48 @@ test_drawdeck/fast:
 	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_drawdeck.dir/build.make tests/CMakeFiles/test_drawdeck.dir/build
 .PHONY : test_drawdeck/fast
 
+# Convenience name for target.
+tests/CMakeFiles/test_playerdeck.dir/rule:
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_playerdeck.dir/rule
+.PHONY : tests/CMakeFiles/test_playerdeck.dir/rule
+
+# Convenience name for target.
+test_playerdeck: tests/CMakeFiles/test_playerdeck.dir/rule
+.PHONY : test_playerdeck
+
+# fast build rule for target.
+test_playerdeck/fast:
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_playerdeck.dir/build.make tests/CMakeFiles/test_playerdeck.dir/build
+.PHONY : test_playerdeck/fast
+
+# Convenience name for target.
+tests/CMakeFiles/test_discardpile.dir/rule:
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_discardpile.dir/rule
+.PHONY : tests/CMakeFiles/test_discardpile.dir/rule
+
+# Convenience name for target.
+test_discardpile: tests/CMakeFiles/test_discardpile.dir/rule
+.PHONY : test_discardpile
+
+# fast build rule for target.
+test_discardpile/fast:
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_discardpile.dir/build.make tests/CMakeFiles/test_discardpile.dir/build
+.PHONY : test_discardpile/fast
+
+# Convenience name for target.
+tests/CMakeFiles/test_humanplayer.dir/rule:
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_humanplayer.dir/rule
+.PHONY : tests/CMakeFiles/test_humanplayer.dir/rule
+
+# Convenience name for target.
+test_humanplayer: tests/CMakeFiles/test_humanplayer.dir/rule
+.PHONY : test_humanplayer
+
+# fast build rule for target.
+test_humanplayer/fast:
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_humanplayer.dir/build.make tests/CMakeFiles/test_humanplayer.dir/build
+.PHONY : test_humanplayer/fast
+
 __/src/Card.o: __/src/Card.cpp.o
 .PHONY : __/src/Card.o
 
@@ -206,6 +248,9 @@ __/src/Card.o: __/src/Card.cpp.o
 __/src/Card.cpp.o:
 	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_card.dir/build.make tests/CMakeFiles/test_card.dir/__/src/Card.cpp.o
 	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_drawdeck.dir/build.make tests/CMakeFiles/test_drawdeck.dir/__/src/Card.cpp.o
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_playerdeck.dir/build.make tests/CMakeFiles/test_playerdeck.dir/__/src/Card.cpp.o
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_discardpile.dir/build.make tests/CMakeFiles/test_discardpile.dir/__/src/Card.cpp.o
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_humanplayer.dir/build.make tests/CMakeFiles/test_humanplayer.dir/__/src/Card.cpp.o
 .PHONY : __/src/Card.cpp.o
 
 __/src/Card.i: __/src/Card.cpp.i
@@ -215,6 +260,9 @@ __/src/Card.i: __/src/Card.cpp.i
 __/src/Card.cpp.i:
 	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_card.dir/build.make tests/CMakeFiles/test_card.dir/__/src/Card.cpp.i
 	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_drawdeck.dir/build.make tests/CMakeFiles/test_drawdeck.dir/__/src/Card.cpp.i
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_playerdeck.dir/build.make tests/CMakeFiles/test_playerdeck.dir/__/src/Card.cpp.i
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_discardpile.dir/build.make tests/CMakeFiles/test_discardpile.dir/__/src/Card.cpp.i
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_humanplayer.dir/build.make tests/CMakeFiles/test_humanplayer.dir/__/src/Card.cpp.i
 .PHONY : __/src/Card.cpp.i
 
 __/src/Card.s: __/src/Card.cpp.s
@@ -224,6 +272,9 @@ __/src/Card.s: __/src/Card.cpp.s
 __/src/Card.cpp.s:
 	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_card.dir/build.make tests/CMakeFiles/test_card.dir/__/src/Card.cpp.s
 	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_drawdeck.dir/build.make tests/CMakeFiles/test_drawdeck.dir/__/src/Card.cpp.s
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_playerdeck.dir/build.make tests/CMakeFiles/test_playerdeck.dir/__/src/Card.cpp.s
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_discardpile.dir/build.make tests/CMakeFiles/test_discardpile.dir/__/src/Card.cpp.s
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_humanplayer.dir/build.make tests/CMakeFiles/test_humanplayer.dir/__/src/Card.cpp.s
 .PHONY : __/src/Card.cpp.s
 
 __/src/DiscardPile.o: __/src/DiscardPile.cpp.o
@@ -232,6 +283,9 @@ __/src/DiscardPile.o: __/src/DiscardPile.cpp.o
 # target to build an object file
 __/src/DiscardPile.cpp.o:
 	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_drawdeck.dir/build.make tests/CMakeFiles/test_drawdeck.dir/__/src/DiscardPile.cpp.o
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_playerdeck.dir/build.make tests/CMakeFiles/test_playerdeck.dir/__/src/DiscardPile.cpp.o
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_discardpile.dir/build.make tests/CMakeFiles/test_discardpile.dir/__/src/DiscardPile.cpp.o
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_humanplayer.dir/build.make tests/CMakeFiles/test_humanplayer.dir/__/src/DiscardPile.cpp.o
 .PHONY : __/src/DiscardPile.cpp.o
 
 __/src/DiscardPile.i: __/src/DiscardPile.cpp.i
@@ -240,6 +294,9 @@ __/src/DiscardPile.i: __/src/DiscardPile.cpp.i
 # target to preprocess a source file
 __/src/DiscardPile.cpp.i:
 	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_drawdeck.dir/build.make tests/CMakeFiles/test_drawdeck.dir/__/src/DiscardPile.cpp.i
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_playerdeck.dir/build.make tests/CMakeFiles/test_playerdeck.dir/__/src/DiscardPile.cpp.i
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_discardpile.dir/build.make tests/CMakeFiles/test_discardpile.dir/__/src/DiscardPile.cpp.i
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_humanplayer.dir/build.make tests/CMakeFiles/test_humanplayer.dir/__/src/DiscardPile.cpp.i
 .PHONY : __/src/DiscardPile.cpp.i
 
 __/src/DiscardPile.s: __/src/DiscardPile.cpp.s
@@ -248,6 +305,9 @@ __/src/DiscardPile.s: __/src/DiscardPile.cpp.s
 # target to generate assembly for a file
 __/src/DiscardPile.cpp.s:
 	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_drawdeck.dir/build.make tests/CMakeFiles/test_drawdeck.dir/__/src/DiscardPile.cpp.s
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_playerdeck.dir/build.make tests/CMakeFiles/test_playerdeck.dir/__/src/DiscardPile.cpp.s
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_discardpile.dir/build.make tests/CMakeFiles/test_discardpile.dir/__/src/DiscardPile.cpp.s
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_humanplayer.dir/build.make tests/CMakeFiles/test_humanplayer.dir/__/src/DiscardPile.cpp.s
 .PHONY : __/src/DiscardPile.cpp.s
 
 __/src/DrawDeck.o: __/src/DrawDeck.cpp.o
@@ -256,6 +316,9 @@ __/src/DrawDeck.o: __/src/DrawDeck.cpp.o
 # target to build an object file
 __/src/DrawDeck.cpp.o:
 	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_drawdeck.dir/build.make tests/CMakeFiles/test_drawdeck.dir/__/src/DrawDeck.cpp.o
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_playerdeck.dir/build.make tests/CMakeFiles/test_playerdeck.dir/__/src/DrawDeck.cpp.o
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_discardpile.dir/build.make tests/CMakeFiles/test_discardpile.dir/__/src/DrawDeck.cpp.o
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_humanplayer.dir/build.make tests/CMakeFiles/test_humanplayer.dir/__/src/DrawDeck.cpp.o
 .PHONY : __/src/DrawDeck.cpp.o
 
 __/src/DrawDeck.i: __/src/DrawDeck.cpp.i
@@ -264,6 +327,9 @@ __/src/DrawDeck.i: __/src/DrawDeck.cpp.i
 # target to preprocess a source file
 __/src/DrawDeck.cpp.i:
 	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_drawdeck.dir/build.make tests/CMakeFiles/test_drawdeck.dir/__/src/DrawDeck.cpp.i
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_playerdeck.dir/build.make tests/CMakeFiles/test_playerdeck.dir/__/src/DrawDeck.cpp.i
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_discardpile.dir/build.make tests/CMakeFiles/test_discardpile.dir/__/src/DrawDeck.cpp.i
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_humanplayer.dir/build.make tests/CMakeFiles/test_humanplayer.dir/__/src/DrawDeck.cpp.i
 .PHONY : __/src/DrawDeck.cpp.i
 
 __/src/DrawDeck.s: __/src/DrawDeck.cpp.s
@@ -272,6 +338,9 @@ __/src/DrawDeck.s: __/src/DrawDeck.cpp.s
 # target to generate assembly for a file
 __/src/DrawDeck.cpp.s:
 	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_drawdeck.dir/build.make tests/CMakeFiles/test_drawdeck.dir/__/src/DrawDeck.cpp.s
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_playerdeck.dir/build.make tests/CMakeFiles/test_playerdeck.dir/__/src/DrawDeck.cpp.s
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_discardpile.dir/build.make tests/CMakeFiles/test_discardpile.dir/__/src/DrawDeck.cpp.s
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_humanplayer.dir/build.make tests/CMakeFiles/test_humanplayer.dir/__/src/DrawDeck.cpp.s
 .PHONY : __/src/DrawDeck.cpp.s
 
 __/src/Player.o: __/src/Player.cpp.o
@@ -280,6 +349,9 @@ __/src/Player.o: __/src/Player.cpp.o
 # target to build an object file
 __/src/Player.cpp.o:
 	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_drawdeck.dir/build.make tests/CMakeFiles/test_drawdeck.dir/__/src/Player.cpp.o
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_playerdeck.dir/build.make tests/CMakeFiles/test_playerdeck.dir/__/src/Player.cpp.o
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_discardpile.dir/build.make tests/CMakeFiles/test_discardpile.dir/__/src/Player.cpp.o
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_humanplayer.dir/build.make tests/CMakeFiles/test_humanplayer.dir/__/src/Player.cpp.o
 .PHONY : __/src/Player.cpp.o
 
 __/src/Player.i: __/src/Player.cpp.i
@@ -288,6 +360,9 @@ __/src/Player.i: __/src/Player.cpp.i
 # target to preprocess a source file
 __/src/Player.cpp.i:
 	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_drawdeck.dir/build.make tests/CMakeFiles/test_drawdeck.dir/__/src/Player.cpp.i
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_playerdeck.dir/build.make tests/CMakeFiles/test_playerdeck.dir/__/src/Player.cpp.i
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_discardpile.dir/build.make tests/CMakeFiles/test_discardpile.dir/__/src/Player.cpp.i
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_humanplayer.dir/build.make tests/CMakeFiles/test_humanplayer.dir/__/src/Player.cpp.i
 .PHONY : __/src/Player.cpp.i
 
 __/src/Player.s: __/src/Player.cpp.s
@@ -296,6 +371,9 @@ __/src/Player.s: __/src/Player.cpp.s
 # target to generate assembly for a file
 __/src/Player.cpp.s:
 	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_drawdeck.dir/build.make tests/CMakeFiles/test_drawdeck.dir/__/src/Player.cpp.s
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_playerdeck.dir/build.make tests/CMakeFiles/test_playerdeck.dir/__/src/Player.cpp.s
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_discardpile.dir/build.make tests/CMakeFiles/test_discardpile.dir/__/src/Player.cpp.s
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_humanplayer.dir/build.make tests/CMakeFiles/test_humanplayer.dir/__/src/Player.cpp.s
 .PHONY : __/src/Player.cpp.s
 
 __/src/PlayerDeck.o: __/src/PlayerDeck.cpp.o
@@ -304,6 +382,9 @@ __/src/PlayerDeck.o: __/src/PlayerDeck.cpp.o
 # target to build an object file
 __/src/PlayerDeck.cpp.o:
 	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_drawdeck.dir/build.make tests/CMakeFiles/test_drawdeck.dir/__/src/PlayerDeck.cpp.o
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_playerdeck.dir/build.make tests/CMakeFiles/test_playerdeck.dir/__/src/PlayerDeck.cpp.o
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_discardpile.dir/build.make tests/CMakeFiles/test_discardpile.dir/__/src/PlayerDeck.cpp.o
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_humanplayer.dir/build.make tests/CMakeFiles/test_humanplayer.dir/__/src/PlayerDeck.cpp.o
 .PHONY : __/src/PlayerDeck.cpp.o
 
 __/src/PlayerDeck.i: __/src/PlayerDeck.cpp.i
@@ -312,6 +393,9 @@ __/src/PlayerDeck.i: __/src/PlayerDeck.cpp.i
 # target to preprocess a source file
 __/src/PlayerDeck.cpp.i:
 	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_drawdeck.dir/build.make tests/CMakeFiles/test_drawdeck.dir/__/src/PlayerDeck.cpp.i
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_playerdeck.dir/build.make tests/CMakeFiles/test_playerdeck.dir/__/src/PlayerDeck.cpp.i
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_discardpile.dir/build.make tests/CMakeFiles/test_discardpile.dir/__/src/PlayerDeck.cpp.i
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_humanplayer.dir/build.make tests/CMakeFiles/test_humanplayer.dir/__/src/PlayerDeck.cpp.i
 .PHONY : __/src/PlayerDeck.cpp.i
 
 __/src/PlayerDeck.s: __/src/PlayerDeck.cpp.s
@@ -320,6 +404,9 @@ __/src/PlayerDeck.s: __/src/PlayerDeck.cpp.s
 # target to generate assembly for a file
 __/src/PlayerDeck.cpp.s:
 	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_drawdeck.dir/build.make tests/CMakeFiles/test_drawdeck.dir/__/src/PlayerDeck.cpp.s
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_playerdeck.dir/build.make tests/CMakeFiles/test_playerdeck.dir/__/src/PlayerDeck.cpp.s
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_discardpile.dir/build.make tests/CMakeFiles/test_discardpile.dir/__/src/PlayerDeck.cpp.s
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_humanplayer.dir/build.make tests/CMakeFiles/test_humanplayer.dir/__/src/PlayerDeck.cpp.s
 .PHONY : __/src/PlayerDeck.cpp.s
 
 __/src/Playloop.o: __/src/Playloop.cpp.o
@@ -328,6 +415,9 @@ __/src/Playloop.o: __/src/Playloop.cpp.o
 # target to build an object file
 __/src/Playloop.cpp.o:
 	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_drawdeck.dir/build.make tests/CMakeFiles/test_drawdeck.dir/__/src/Playloop.cpp.o
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_playerdeck.dir/build.make tests/CMakeFiles/test_playerdeck.dir/__/src/Playloop.cpp.o
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_discardpile.dir/build.make tests/CMakeFiles/test_discardpile.dir/__/src/Playloop.cpp.o
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_humanplayer.dir/build.make tests/CMakeFiles/test_humanplayer.dir/__/src/Playloop.cpp.o
 .PHONY : __/src/Playloop.cpp.o
 
 __/src/Playloop.i: __/src/Playloop.cpp.i
@@ -336,6 +426,9 @@ __/src/Playloop.i: __/src/Playloop.cpp.i
 # target to preprocess a source file
 __/src/Playloop.cpp.i:
 	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_drawdeck.dir/build.make tests/CMakeFiles/test_drawdeck.dir/__/src/Playloop.cpp.i
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_playerdeck.dir/build.make tests/CMakeFiles/test_playerdeck.dir/__/src/Playloop.cpp.i
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_discardpile.dir/build.make tests/CMakeFiles/test_discardpile.dir/__/src/Playloop.cpp.i
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_humanplayer.dir/build.make tests/CMakeFiles/test_humanplayer.dir/__/src/Playloop.cpp.i
 .PHONY : __/src/Playloop.cpp.i
 
 __/src/Playloop.s: __/src/Playloop.cpp.s
@@ -344,6 +437,9 @@ __/src/Playloop.s: __/src/Playloop.cpp.s
 # target to generate assembly for a file
 __/src/Playloop.cpp.s:
 	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_drawdeck.dir/build.make tests/CMakeFiles/test_drawdeck.dir/__/src/Playloop.cpp.s
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_playerdeck.dir/build.make tests/CMakeFiles/test_playerdeck.dir/__/src/Playloop.cpp.s
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_discardpile.dir/build.make tests/CMakeFiles/test_discardpile.dir/__/src/Playloop.cpp.s
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_humanplayer.dir/build.make tests/CMakeFiles/test_humanplayer.dir/__/src/Playloop.cpp.s
 .PHONY : __/src/Playloop.cpp.s
 
 __/src/UNOGame.o: __/src/UNOGame.cpp.o
@@ -352,6 +448,9 @@ __/src/UNOGame.o: __/src/UNOGame.cpp.o
 # target to build an object file
 __/src/UNOGame.cpp.o:
 	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_drawdeck.dir/build.make tests/CMakeFiles/test_drawdeck.dir/__/src/UNOGame.cpp.o
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_playerdeck.dir/build.make tests/CMakeFiles/test_playerdeck.dir/__/src/UNOGame.cpp.o
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_discardpile.dir/build.make tests/CMakeFiles/test_discardpile.dir/__/src/UNOGame.cpp.o
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_humanplayer.dir/build.make tests/CMakeFiles/test_humanplayer.dir/__/src/UNOGame.cpp.o
 .PHONY : __/src/UNOGame.cpp.o
 
 __/src/UNOGame.i: __/src/UNOGame.cpp.i
@@ -360,6 +459,9 @@ __/src/UNOGame.i: __/src/UNOGame.cpp.i
 # target to preprocess a source file
 __/src/UNOGame.cpp.i:
 	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_drawdeck.dir/build.make tests/CMakeFiles/test_drawdeck.dir/__/src/UNOGame.cpp.i
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_playerdeck.dir/build.make tests/CMakeFiles/test_playerdeck.dir/__/src/UNOGame.cpp.i
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_discardpile.dir/build.make tests/CMakeFiles/test_discardpile.dir/__/src/UNOGame.cpp.i
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_humanplayer.dir/build.make tests/CMakeFiles/test_humanplayer.dir/__/src/UNOGame.cpp.i
 .PHONY : __/src/UNOGame.cpp.i
 
 __/src/UNOGame.s: __/src/UNOGame.cpp.s
@@ -368,6 +470,9 @@ __/src/UNOGame.s: __/src/UNOGame.cpp.s
 # target to generate assembly for a file
 __/src/UNOGame.cpp.s:
 	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_drawdeck.dir/build.make tests/CMakeFiles/test_drawdeck.dir/__/src/UNOGame.cpp.s
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_playerdeck.dir/build.make tests/CMakeFiles/test_playerdeck.dir/__/src/UNOGame.cpp.s
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_discardpile.dir/build.make tests/CMakeFiles/test_discardpile.dir/__/src/UNOGame.cpp.s
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_humanplayer.dir/build.make tests/CMakeFiles/test_humanplayer.dir/__/src/UNOGame.cpp.s
 .PHONY : __/src/UNOGame.cpp.s
 
 test_card.o: test_card.cpp.o
@@ -394,6 +499,30 @@ test_card.cpp.s:
 	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_card.dir/build.make tests/CMakeFiles/test_card.dir/test_card.cpp.s
 .PHONY : test_card.cpp.s
 
+test_discardpile.o: test_discardpile.cpp.o
+.PHONY : test_discardpile.o
+
+# target to build an object file
+test_discardpile.cpp.o:
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_discardpile.dir/build.make tests/CMakeFiles/test_discardpile.dir/test_discardpile.cpp.o
+.PHONY : test_discardpile.cpp.o
+
+test_discardpile.i: test_discardpile.cpp.i
+.PHONY : test_discardpile.i
+
+# target to preprocess a source file
+test_discardpile.cpp.i:
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_discardpile.dir/build.make tests/CMakeFiles/test_discardpile.dir/test_discardpile.cpp.i
+.PHONY : test_discardpile.cpp.i
+
+test_discardpile.s: test_discardpile.cpp.s
+.PHONY : test_discardpile.s
+
+# target to generate assembly for a file
+test_discardpile.cpp.s:
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_discardpile.dir/build.make tests/CMakeFiles/test_discardpile.dir/test_discardpile.cpp.s
+.PHONY : test_discardpile.cpp.s
+
 test_drawdeck.o: test_drawdeck.cpp.o
 .PHONY : test_drawdeck.o
 
@@ -418,6 +547,54 @@ test_drawdeck.cpp.s:
 	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_drawdeck.dir/build.make tests/CMakeFiles/test_drawdeck.dir/test_drawdeck.cpp.s
 .PHONY : test_drawdeck.cpp.s
 
+test_humanplayer.o: test_humanplayer.cpp.o
+.PHONY : test_humanplayer.o
+
+# target to build an object file
+test_humanplayer.cpp.o:
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_humanplayer.dir/build.make tests/CMakeFiles/test_humanplayer.dir/test_humanplayer.cpp.o
+.PHONY : test_humanplayer.cpp.o
+
+test_humanplayer.i: test_humanplayer.cpp.i
+.PHONY : test_humanplayer.i
+
+# target to preprocess a source file
+test_humanplayer.cpp.i:
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_humanplayer.dir/build.make tests/CMakeFiles/test_humanplayer.dir/test_humanplayer.cpp.i
+.PHONY : test_humanplayer.cpp.i
+
+test_humanplayer.s: test_humanplayer.cpp.s
+.PHONY : test_humanplayer.s
+
+# target to generate assembly for a file
+test_humanplayer.cpp.s:
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_humanplayer.dir/build.make tests/CMakeFiles/test_humanplayer.dir/test_humanplayer.cpp.s
+.PHONY : test_humanplayer.cpp.s
+
+test_playerdeck.o: test_playerdeck.cpp.o
+.PHONY : test_playerdeck.o
+
+# target to build an object file
+test_playerdeck.cpp.o:
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_playerdeck.dir/build.make tests/CMakeFiles/test_playerdeck.dir/test_playerdeck.cpp.o
+.PHONY : test_playerdeck.cpp.o
+
+test_playerdeck.i: test_playerdeck.cpp.i
+.PHONY : test_playerdeck.i
+
+# target to preprocess a source file
+test_playerdeck.cpp.i:
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_playerdeck.dir/build.make tests/CMakeFiles/test_playerdeck.dir/test_playerdeck.cpp.i
+.PHONY : test_playerdeck.cpp.i
+
+test_playerdeck.s: test_playerdeck.cpp.s
+.PHONY : test_playerdeck.s
+
+# target to generate assembly for a file
+test_playerdeck.cpp.s:
+	cd /Users/omarjingoisemperor/Desktop/UNO/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_playerdeck.dir/build.make tests/CMakeFiles/test_playerdeck.dir/test_playerdeck.cpp.s
+.PHONY : test_playerdeck.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -432,7 +609,10 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... test_card"
+	@echo "... test_discardpile"
 	@echo "... test_drawdeck"
+	@echo "... test_humanplayer"
+	@echo "... test_playerdeck"
 	@echo "... __/src/Card.o"
 	@echo "... __/src/Card.i"
 	@echo "... __/src/Card.s"
@@ -457,9 +637,18 @@ help:
 	@echo "... test_card.o"
 	@echo "... test_card.i"
 	@echo "... test_card.s"
+	@echo "... test_discardpile.o"
+	@echo "... test_discardpile.i"
+	@echo "... test_discardpile.s"
 	@echo "... test_drawdeck.o"
 	@echo "... test_drawdeck.i"
 	@echo "... test_drawdeck.s"
+	@echo "... test_humanplayer.o"
+	@echo "... test_humanplayer.i"
+	@echo "... test_humanplayer.s"
+	@echo "... test_playerdeck.o"
+	@echo "... test_playerdeck.i"
+	@echo "... test_playerdeck.s"
 .PHONY : help
 
 

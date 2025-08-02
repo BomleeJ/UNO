@@ -7,8 +7,8 @@
 TEST(DrawDeck, Constructor) {
     DrawDeck deck;
     
-    // Should have 108 cards (4 colors * 13 labels * 2 each)
-    EXPECT_EQ(deck.size(), 108);
+    // Should have 112 cards (4 colors * 13 labels * 2 each + 8 wild cards)
+    EXPECT_EQ(deck.size(), 112);
 }
 
 TEST(DrawDeck, ConstructorCardDistribution) {
@@ -41,10 +41,10 @@ TEST(DrawDeck, ConstructorCardDistribution) {
         EXPECT_EQ(labelCounts[i], 8); // 4 colors * 2 each
     }
     
-    // No wild cards in regular deck
-    EXPECT_EQ(colorCounts[static_cast<int>(Color::NONE)], 0); 
-    EXPECT_EQ(labelCounts[static_cast<int>(Label::Wild)], 0); 
-    EXPECT_EQ(labelCounts[static_cast<int>(Label::WildDrawFour)], 0); 
+    // Wild cards in regular deck
+    EXPECT_EQ(colorCounts[static_cast<int>(Color::NONE)], 8); 
+    EXPECT_EQ(labelCounts[static_cast<int>(Label::Wild)], 4); 
+    EXPECT_EQ(labelCounts[static_cast<int>(Label::WildDrawFour)], 4); 
 }
 
 // Test draw functionality
@@ -122,22 +122,16 @@ TEST(DrawDeck, TopCardMultipleTimes) {
     EXPECT_EQ(top1.getLabel(), drawn->getLabel());
 }
 
-// Test size functionality
-TEST(DrawDeck, SizeAfterConstruction) {
-    DrawDeck deck;
-    EXPECT_EQ(deck.size(), 108);
-}
-
 TEST(DrawDeck, SizeAfterDrawing) {
     DrawDeck deck;
     
-    EXPECT_EQ(deck.size(), 108);
+    EXPECT_EQ(deck.size(), 112);
     
     deck.draw();
-    EXPECT_EQ(deck.size(), 107);
+    EXPECT_EQ(deck.size(), 111);
     
     deck.draw();
-    EXPECT_EQ(deck.size(), 106);
+    EXPECT_EQ(deck.size(), 110);
 }
 
 // Test edge cases
@@ -149,7 +143,7 @@ TEST(DrawDeck, DrawFromEmptyDeck) {
         deck.draw();
     }
     
-    EXPECT_EQ(deck.size(), 92); // 108 - 200 + 108 = 92 (Deck is automatically and fully replenished upon emptying)
+    EXPECT_EQ(deck.size(), 24); // 112 - 200 + 112 = 24 (Deck is automatically and fully replenished upon emptying)
 }
 
 int main(int argc, char **argv) {

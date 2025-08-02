@@ -1,10 +1,11 @@
 #include "Player.h"
 
-Player::Player() { }
+Player::Player(): hasDrawn(false) { }
 
 void Player::drawCard(DrawDeck& HiddenCards)
 {
     deck.add(HiddenCards.draw());
+    hasDrawn = true;
 }
 
 void Player::drawSevenCards(DrawDeck& HiddenCards)
@@ -35,7 +36,7 @@ bool Player::hasPlayableCards()
 
 bool Player::hasWon() 
 { 
-    return deck.empty();
+    return hasDrawn && deck.empty();
 }
 
 bool Player::ishuman() const

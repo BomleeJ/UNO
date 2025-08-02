@@ -157,11 +157,17 @@ _deps/googletest-build/googletest/clean: _deps/googletest-build/googletest/CMake
 # Recursive "all" directory target.
 tests/all: tests/CMakeFiles/test_card.dir/all
 tests/all: tests/CMakeFiles/test_drawdeck.dir/all
+tests/all: tests/CMakeFiles/test_playerdeck.dir/all
+tests/all: tests/CMakeFiles/test_discardpile.dir/all
+tests/all: tests/CMakeFiles/test_humanplayer.dir/all
 .PHONY : tests/all
 
 # Recursive "codegen" directory target.
 tests/codegen: tests/CMakeFiles/test_card.dir/codegen
 tests/codegen: tests/CMakeFiles/test_drawdeck.dir/codegen
+tests/codegen: tests/CMakeFiles/test_playerdeck.dir/codegen
+tests/codegen: tests/CMakeFiles/test_discardpile.dir/codegen
+tests/codegen: tests/CMakeFiles/test_humanplayer.dir/codegen
 .PHONY : tests/codegen
 
 # Recursive "preinstall" directory target.
@@ -171,6 +177,9 @@ tests/preinstall:
 # Recursive "clean" directory target.
 tests/clean: tests/CMakeFiles/test_card.dir/clean
 tests/clean: tests/CMakeFiles/test_drawdeck.dir/clean
+tests/clean: tests/CMakeFiles/test_playerdeck.dir/clean
+tests/clean: tests/CMakeFiles/test_discardpile.dir/clean
+tests/clean: tests/CMakeFiles/test_humanplayer.dir/clean
 .PHONY : tests/clean
 
 #=============================================================================
@@ -375,7 +384,7 @@ tests/CMakeFiles/test_drawdeck.dir/all: _deps/googletest-build/googletest/CMakeF
 tests/CMakeFiles/test_drawdeck.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_drawdeck.dir/build.make tests/CMakeFiles/test_drawdeck.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_drawdeck.dir/build.make tests/CMakeFiles/test_drawdeck.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/omarjingoisemperor/Desktop/UNO/build/CMakeFiles --progress-num=21,22,23,24,25,26,27,28,29 "Built target test_drawdeck"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/omarjingoisemperor/Desktop/UNO/build/CMakeFiles --progress-num=30,31,32,33,34,35,36,37,38 "Built target test_drawdeck"
 .PHONY : tests/CMakeFiles/test_drawdeck.dir/all
 
 # Build rule for subdir invocation for target.
@@ -392,13 +401,112 @@ test_drawdeck: tests/CMakeFiles/test_drawdeck.dir/rule
 # codegen rule for target.
 tests/CMakeFiles/test_drawdeck.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_drawdeck.dir/build.make tests/CMakeFiles/test_drawdeck.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/omarjingoisemperor/Desktop/UNO/build/CMakeFiles --progress-num=21,22,23,24,25,26,27,28,29 "Finished codegen for target test_drawdeck"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/omarjingoisemperor/Desktop/UNO/build/CMakeFiles --progress-num=30,31,32,33,34,35,36,37,38 "Finished codegen for target test_drawdeck"
 .PHONY : tests/CMakeFiles/test_drawdeck.dir/codegen
 
 # clean rule for target.
 tests/CMakeFiles/test_drawdeck.dir/clean:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_drawdeck.dir/build.make tests/CMakeFiles/test_drawdeck.dir/clean
 .PHONY : tests/CMakeFiles/test_drawdeck.dir/clean
+
+#=============================================================================
+# Target rules for target tests/CMakeFiles/test_playerdeck.dir
+
+# All Build rule for target.
+tests/CMakeFiles/test_playerdeck.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
+tests/CMakeFiles/test_playerdeck.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_playerdeck.dir/build.make tests/CMakeFiles/test_playerdeck.dir/depend
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_playerdeck.dir/build.make tests/CMakeFiles/test_playerdeck.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/omarjingoisemperor/Desktop/UNO/build/CMakeFiles --progress-num=48,49,50,51,52,53,54,55,56 "Built target test_playerdeck"
+.PHONY : tests/CMakeFiles/test_playerdeck.dir/all
+
+# Build rule for subdir invocation for target.
+tests/CMakeFiles/test_playerdeck.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/omarjingoisemperor/Desktop/UNO/build/CMakeFiles 13
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_playerdeck.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/omarjingoisemperor/Desktop/UNO/build/CMakeFiles 0
+.PHONY : tests/CMakeFiles/test_playerdeck.dir/rule
+
+# Convenience name for target.
+test_playerdeck: tests/CMakeFiles/test_playerdeck.dir/rule
+.PHONY : test_playerdeck
+
+# codegen rule for target.
+tests/CMakeFiles/test_playerdeck.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_playerdeck.dir/build.make tests/CMakeFiles/test_playerdeck.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/omarjingoisemperor/Desktop/UNO/build/CMakeFiles --progress-num=48,49,50,51,52,53,54,55,56 "Finished codegen for target test_playerdeck"
+.PHONY : tests/CMakeFiles/test_playerdeck.dir/codegen
+
+# clean rule for target.
+tests/CMakeFiles/test_playerdeck.dir/clean:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_playerdeck.dir/build.make tests/CMakeFiles/test_playerdeck.dir/clean
+.PHONY : tests/CMakeFiles/test_playerdeck.dir/clean
+
+#=============================================================================
+# Target rules for target tests/CMakeFiles/test_discardpile.dir
+
+# All Build rule for target.
+tests/CMakeFiles/test_discardpile.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
+tests/CMakeFiles/test_discardpile.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_discardpile.dir/build.make tests/CMakeFiles/test_discardpile.dir/depend
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_discardpile.dir/build.make tests/CMakeFiles/test_discardpile.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/omarjingoisemperor/Desktop/UNO/build/CMakeFiles --progress-num=21,22,23,24,25,26,27,28,29 "Built target test_discardpile"
+.PHONY : tests/CMakeFiles/test_discardpile.dir/all
+
+# Build rule for subdir invocation for target.
+tests/CMakeFiles/test_discardpile.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/omarjingoisemperor/Desktop/UNO/build/CMakeFiles 13
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_discardpile.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/omarjingoisemperor/Desktop/UNO/build/CMakeFiles 0
+.PHONY : tests/CMakeFiles/test_discardpile.dir/rule
+
+# Convenience name for target.
+test_discardpile: tests/CMakeFiles/test_discardpile.dir/rule
+.PHONY : test_discardpile
+
+# codegen rule for target.
+tests/CMakeFiles/test_discardpile.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_discardpile.dir/build.make tests/CMakeFiles/test_discardpile.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/omarjingoisemperor/Desktop/UNO/build/CMakeFiles --progress-num=21,22,23,24,25,26,27,28,29 "Finished codegen for target test_discardpile"
+.PHONY : tests/CMakeFiles/test_discardpile.dir/codegen
+
+# clean rule for target.
+tests/CMakeFiles/test_discardpile.dir/clean:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_discardpile.dir/build.make tests/CMakeFiles/test_discardpile.dir/clean
+.PHONY : tests/CMakeFiles/test_discardpile.dir/clean
+
+#=============================================================================
+# Target rules for target tests/CMakeFiles/test_humanplayer.dir
+
+# All Build rule for target.
+tests/CMakeFiles/test_humanplayer.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
+tests/CMakeFiles/test_humanplayer.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_humanplayer.dir/build.make tests/CMakeFiles/test_humanplayer.dir/depend
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_humanplayer.dir/build.make tests/CMakeFiles/test_humanplayer.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/omarjingoisemperor/Desktop/UNO/build/CMakeFiles --progress-num=39,40,41,42,43,44,45,46,47 "Built target test_humanplayer"
+.PHONY : tests/CMakeFiles/test_humanplayer.dir/all
+
+# Build rule for subdir invocation for target.
+tests/CMakeFiles/test_humanplayer.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/omarjingoisemperor/Desktop/UNO/build/CMakeFiles 13
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_humanplayer.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/omarjingoisemperor/Desktop/UNO/build/CMakeFiles 0
+.PHONY : tests/CMakeFiles/test_humanplayer.dir/rule
+
+# Convenience name for target.
+test_humanplayer: tests/CMakeFiles/test_humanplayer.dir/rule
+.PHONY : test_humanplayer
+
+# codegen rule for target.
+tests/CMakeFiles/test_humanplayer.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_humanplayer.dir/build.make tests/CMakeFiles/test_humanplayer.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/omarjingoisemperor/Desktop/UNO/build/CMakeFiles --progress-num=39,40,41,42,43,44,45,46,47 "Finished codegen for target test_humanplayer"
+.PHONY : tests/CMakeFiles/test_humanplayer.dir/codegen
+
+# clean rule for target.
+tests/CMakeFiles/test_humanplayer.dir/clean:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_humanplayer.dir/build.make tests/CMakeFiles/test_humanplayer.dir/clean
+.PHONY : tests/CMakeFiles/test_humanplayer.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

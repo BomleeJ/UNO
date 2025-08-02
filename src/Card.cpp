@@ -44,8 +44,9 @@ bool Card::isvalid(const Card& other) const
 {
     if (wild) { return true; }
 
-    if (other.getColor() == color || other.getLabel() == label) {return true; }
-
+    if (other.getColor() == color || other.getLabel() == label) {
+        return true; 
+    }
     return false;
     
 }

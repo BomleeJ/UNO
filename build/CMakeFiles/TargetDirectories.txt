@@ -33,6 +33,9 @@
 /Users/omarjingoisemperor/Desktop/UNO/build/_deps/googletest-build/googletest/CMakeFiles/install/strip.dir
 /Users/omarjingoisemperor/Desktop/UNO/build/tests/CMakeFiles/test_card.dir
 /Users/omarjingoisemperor/Desktop/UNO/build/tests/CMakeFiles/test_drawdeck.dir
+/Users/omarjingoisemperor/Desktop/UNO/build/tests/CMakeFiles/test_playerdeck.dir
+/Users/omarjingoisemperor/Desktop/UNO/build/tests/CMakeFiles/test_discardpile.dir
+/Users/omarjingoisemperor/Desktop/UNO/build/tests/CMakeFiles/test_humanplayer.dir
 /Users/omarjingoisemperor/Desktop/UNO/build/tests/CMakeFiles/test.dir
 /Users/omarjingoisemperor/Desktop/UNO/build/tests/CMakeFiles/edit_cache.dir
 /Users/omarjingoisemperor/Desktop/UNO/build/tests/CMakeFiles/rebuild_cache.dir

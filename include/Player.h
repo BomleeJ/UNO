@@ -10,6 +10,7 @@ Player();
 
 PlayerDeck deck;
 PlayableCards choices;
+bool hasDrawn;
 
 void drawCard(DrawDeck& HiddenCards);
 
@@ -51,5 +52,5 @@ private:
     int selectRandom();
 public: 
     int CPUAlgorithm(DiscardPile& DiscardPile, DrawDeck& HiddenCards); 
-    bool ishuman { false };
+
 };

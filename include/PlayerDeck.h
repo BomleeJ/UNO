@@ -27,6 +27,8 @@ public:
 
     bool empty();
 
+    size_t size();
+
     void print();
 
     void printPlayable(PlayableCards playable);
