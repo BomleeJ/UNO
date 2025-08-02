@@ -1,0 +1,11 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/omarjingoisemperor/Desktop/UNO/build/cmake_install.cmake",
+		"/Users/omarjingoisemperor/Desktop/UNO/build/_deps/googletest-build/cmake_install.cmake",
+		"/Users/omarjingoisemperor/Desktop/UNO/build/_deps/googletest-build/googlemock/cmake_install.cmake",
+		"/Users/omarjingoisemperor/Desktop/UNO/build/_deps/googletest-build/googletest/cmake_install.cmake",
+		"/Users/omarjingoisemperor/Desktop/UNO/build/tests/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

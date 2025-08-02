@@ -1,0 +1,10 @@
+# CMake generated Testfile for 
+# Source directory: /Users/omarjingoisemperor/Desktop/UNO/tests
+# Build directory: /Users/omarjingoisemperor/Desktop/UNO/build/tests
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+add_test(CardTest "/Users/omarjingoisemperor/Desktop/UNO/build/bin/test_card")
+set_tests_properties(CardTest PROPERTIES  _BACKTRACE_TRIPLES "/Users/omarjingoisemperor/Desktop/UNO/tests/CMakeLists.txt;3;add_test;/Users/omarjingoisemperor/Desktop/UNO/tests/CMakeLists.txt;0;")
+add_test(DrawDeckTest "/Users/omarjingoisemperor/Desktop/UNO/build/bin/test_drawdeck")
+set_tests_properties(DrawDeckTest PROPERTIES  _BACKTRACE_TRIPLES "/Users/omarjingoisemperor/Desktop/UNO/tests/CMakeLists.txt;7;add_test;/Users/omarjingoisemperor/Desktop/UNO/tests/CMakeLists.txt;0;")
