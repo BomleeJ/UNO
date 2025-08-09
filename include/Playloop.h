@@ -3,33 +3,23 @@
 
 class PlayLoop
 {
-
-    struct Node
-    {
-        Player* player;
-        Node* prev;
-        Node* next;
-
-        Node(Player* p): 
-            player { p }, 
-            prev { nullptr }, 
-            next { nullptr }
-        { }
-    };
-    Node* HumanNode;
-    Node* CurrTurn;
-    void destroyCPUs();
-    void destroyHuman();
+private:
+    std::vector<std::unique_ptr<Player>> players;
+    size_t numPlayers;
+    size_t currentPlayer;
+    size_t direction;
 
 public:
 
-    PlayLoop(int CPU, DrawDeck& Deck);
-    PlayLoop(PlayLoop& other);
-    void advance(); // Advances to the next one
+    PlayLoop(size_t CPU, DrawDeck& Deck);
     Player* CurrentPlayer();
-    Node* GetHumanNode();
-    bool CurrentPlayerEmpty();
-
-    ~PlayLoop();
+    void SkipTurn();
+    void AdvanceTurn();
+    void ReverseDirection();
+    void AddFourtoNextPlayer(DrawDeck& Deck);
+    void AddTwotoNextPlayer(DrawDeck& Deck);
+    size_t CurrentPlayerIndex();
+    size_t NextPlayerIndex();
+    Player* NextPlayer();
 
 };

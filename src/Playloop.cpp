@@ -1,88 +1,64 @@
 #include "Playloop.h"
 #include "Player.h"
+#include "DrawDeck.h"
 #include <iostream>
+#include <memory>
 
-PlayLoop::PlayLoop(int CPU_, DrawDeck& Deck)
+PlayLoop::PlayLoop(size_t CPUnum, DrawDeck& Deck):
+numPlayers(CPUnum + 1),
+currentPlayer(0),
+direction(1)
 {
-    Human* Humanplayer = new Human();
-    Humanplayer->drawSevenCards(Deck);
-    HumanNode = new Node(Humanplayer);
-    CurrTurn = HumanNode;
-    Node* PrevNode = CurrTurn;
-
-    while (CPU_ > 0)
-    {
-        CPU* CPUPlayer = new CPU();
-        CPUPlayer->drawSevenCards(Deck);
-        Node* CPUNode = new Node(CPUPlayer);
-
-        CPUNode->prev = PrevNode;
-        PrevNode->next = CPUNode;
-        PrevNode = PrevNode->next;
-
-        CPU_--;
+    players.push_back(std::make_unique<Human>());
+    for (size_t i = 1; i < numPlayers; ++i) {
+        players.push_back(std::make_unique<CPU>());
     }
 
-    Node* CurrTurn = HumanNode;
-    //Fi
-    if (HumanNode->next != nullptr)
-    {
-        HumanNode->prev = PrevNode;
-        PrevNode->next = HumanNode;
-
+    for (auto& player : players) {
+        player->drawSevenCards(Deck);
     }
 }
 
-void PlayLoop::destroyCPUs()
-{
-Node* curr = HumanNode->next;
-
-while(HumanNode->prev != nullptr)
-{
-    Node* next = curr->next;
-
-    delete curr->player;
-    curr->player = nullptr;
-
-    delete curr;
-    curr = nullptr;
-
-    curr = next;
+Player* PlayLoop::CurrentPlayer() {
+    return players[currentPlayer].get();
 }
 
+Player* PlayLoop::NextPlayer()
+{
+    return players[(numPlayers + currentPlayer + direction) % numPlayers].get();
 }
 
-void PlayLoop::destroyHuman()
+size_t PlayLoop::CurrentPlayerIndex()
 {
-    delete HumanNode->player;
-    HumanNode->player = nullptr;
-    delete HumanNode;
-    HumanNode = nullptr;
+    return currentPlayer;
 }
 
-bool PlayLoop::CurrentPlayerEmpty()
+size_t PlayLoop::NextPlayerIndex()
 {
-    return CurrTurn->player->hasWon();
+    return (numPlayers + currentPlayer + direction) % numPlayers;
 }
 
-void PlayLoop::advance()
-{
-    CurrTurn = CurrTurn->next;
+void PlayLoop::SkipTurn() {
+    AdvanceTurn();
+    AdvanceTurn();
 }
 
-PlayLoop::Node* PlayLoop::GetHumanNode()
-{
-    return HumanNode;
+void PlayLoop::AdvanceTurn() {
+    currentPlayer = (numPlayers + currentPlayer + direction) % numPlayers;
 }
 
-Player* PlayLoop::CurrentPlayer()
-{
-    return CurrTurn->player;
+void PlayLoop::ReverseDirection() {
+    direction = -direction;
 }
 
-PlayLoop::~PlayLoop()
-{
-destroyCPUs();
-destroyHuman();
-std::cerr << "Player Loop Destructor called";
+void PlayLoop::AddFourtoNextPlayer(DrawDeck& Deck) {
+    NextPlayer()->drawCard(Deck);
+    NextPlayer()->drawCard(Deck);
+    NextPlayer()->drawCard(Deck);
+    NextPlayer()->drawCard(Deck);
+}
+
+void PlayLoop::AddTwotoNextPlayer(DrawDeck& Deck) {
+    NextPlayer()->drawCard(Deck);
+    NextPlayer()->drawCard(Deck);
 }

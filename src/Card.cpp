@@ -92,9 +92,14 @@ std::string Card::LabeltoString() const
         case Label::WildDrawFour:
         return "WILD +4";
         break;
+        case Label::WildTemp:    
+        return "WILD (Placed)";
+        break;
+        default:
+        return "?";
     }
 
-    return "?";
+    
 
 }
 

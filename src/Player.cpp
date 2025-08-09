@@ -1,4 +1,4 @@
-#include "Player.h"
+#include "../include/Player.h"
 
 Player::Player(): hasDrawn(false) { }
 
@@ -103,7 +103,7 @@ int CPU::selectRandom()
 
 
 
-int CPU::CPUAlgorithm(DiscardPile& pile, DrawDeck& HiddenCards)
+int CPU::CPUAlgorithm(DiscardPile& pile, DrawDeck& HiddenCards) 
 {
 refreshPlayableCards(pile);
 
@@ -131,3 +131,7 @@ return index;
 
 }
 
+Color Player::MostCommonColorinDeck()
+{
+    return deck.MostCommonColorinDeck();
+}

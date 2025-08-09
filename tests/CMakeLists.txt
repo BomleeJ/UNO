@@ -17,3 +17,7 @@ add_test(NAME DiscardPileTest COMMAND test_discardpile)
 add_executable(test_humanplayer ${SOURCES} ${CMAKE_SOURCE_DIR}/tests/test_humanplayer.cpp)
 target_link_libraries(test_humanplayer gtest gtest_main)
 add_test(NAME HumanPlayerTest COMMAND test_humanplayer)
+
+add_executable(test_playloop ${SOURCES} ${CMAKE_SOURCE_DIR}/tests/test_playloop.cpp)
+target_link_libraries(test_playloop gtest gtest_main)
+add_test(NAME PlayLoopTest COMMAND test_playloop)

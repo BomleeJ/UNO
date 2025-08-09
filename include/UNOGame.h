@@ -11,36 +11,35 @@ private:
     DrawDeck todraw;
     int numCPU;
     PlayLoop Players;
+    bool winner;
 
-    void printPlayerChoices();
-
-    int safeInputInt(int min, int max);
-
-    void printRecentlyPlayed();
-
-    void printPlayable();
-
-    void printUnPlayable();
-
+    //START MENU
     void printStartMenu();
+    void printRules();
+    int StartMenuResponse();
 
-    void PlayerAddCard();
+    //GAME LOOP
+    void firstDraw();
+    void CPUTurnSequence();
+    void HumanTurnSequence();
+    void HumanPlayCardSequence(Human* CurrentPlayer);
+    void HumanDrawCardSequence(Human* CurrentPlayer);
+    void ApplyCardEffects();
+    void CheckForWin();
 
-    int printRulesAndConfirm();
+    void HumanWildCardSequence();
+    void CPUWildCardSequence();
+    void WildCardColorChange(Color newColor);
 
+    void StartMenuLoop();
+    void GameLoop();
+    void EndScreen();
 
 public:
 
 UNOGame(int CPU); //creates neccesary game objects
 
-void GameLoop();
+void RunGame();
 
-void StartGame(); //Create Decks, Create Players
 
-int StartMenu();
-
-void playerSequence();
-
-void CPUSequence();
 };
-

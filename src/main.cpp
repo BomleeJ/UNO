@@ -1,9 +1,16 @@
 #include "UNOGame.h"
+#include <iostream>
 
 int main() 
 { 
-    UNOGame game = UNOGame(2);
+    std::cout << "Please enter the number of Computer Players: ";
+    int numCPU;
+    std::cin >> numCPU;
 
-    game.StartGame();
+    std::cout << "\n";
 
+
+    UNOGame game = UNOGame(numCPU);
+    game.RunGame();
+    return 0;
 }

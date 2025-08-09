@@ -32,5 +32,7 @@ public:
     void print();
 
     void printPlayable(PlayableCards playable);
+
+    Color MostCommonColorinDeck();
     
 };

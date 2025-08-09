@@ -25,6 +25,12 @@ ${CMAKE_SOURCE_DIR}/src/main.cpp
 ${SOURCES}
 )
 
+add_custom_target(run
+COMMAND $<TARGET_FILE:cardgame>
+DEPENDS cardgame
+WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
+USES_TERMINAL
+)
 
 # Add Google Test
 include(FetchContent)

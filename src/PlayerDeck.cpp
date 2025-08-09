@@ -1,7 +1,8 @@
 #include "PlayerDeck.h"
 #include <iostream>
 #include <iterator>
-
+#include <map>
+#include <algorithm>
 
 
 
@@ -27,9 +28,87 @@ void PlayerDeck::add(std::unique_ptr<Card> card)
 
 void PlayerDeck::print()
 {
-    for (const auto& card : deck)
-    {
-        card->print();
+    // Group cards by color
+    std::map<Color, std::vector<std::string>> colorGroups;
+    
+    // Initialize all color groups
+    colorGroups[Color::RED] = {};
+    colorGroups[Color::BLUE] = {};
+    colorGroups[Color::GREEN] = {};
+    colorGroups[Color::YELLOW] = {};
+    colorGroups[Color::NONE] = {}; 
+    
+    
+    for (const auto& card : deck) {
+        Color color = card->getColor();
+        std::string label = card->LabeltoString();
+        
+        
+        if (label.length() > 7) {
+            label = label.substr(0, 6) + ".";
+        }
+        
+        colorGroups[color].push_back(label);
+    }
+    
+    // Find the maximum number of cards in any color group
+    size_t maxCards = 0;
+    for (const auto& [color, cards] : colorGroups) {
+        maxCards = std::max(maxCards, cards.size());
+    }
+    
+
+    
+    // Print header
+    std::cout << std::format("{:^10} {:^10} {:^10} {:^10} {:^10}", 
+                            "RED", "GREEN", "BLUE", "YELLOW", "SPECIAL") << std::endl;
+    
+    // Print divider
+    std::cout << std::string(50, '-') << std::endl;
+    
+    // Print cards row by row
+    for (size_t row = 0; row < maxCards; ++row) {
+        // Top border row
+        std::cout << "| ";
+        for (const auto& [color, cards] : colorGroups) {
+            if (row < cards.size()) {
+                std::cout << std::format("┌───────┐ ");
+            } else {
+                std::cout << std::format("{:^9} ", "");
+            }
+        }
+        std::cout << "|" << std::endl;
+        
+        // Label row
+        std::cout << "| ";
+        for (const auto& [color, cards] : colorGroups) {
+            if (row < cards.size()) {
+                std::cout << std::format("|{:^7}| ", cards[row]);
+            } else {
+                std::cout << std::format("{:^9} ", "");
+            }
+        }
+        std::cout << "|" << std::endl;
+        
+        // Bottom border row
+        std::cout << "| ";
+        for (const auto& [color, cards] : colorGroups) {
+            if (row < cards.size()) {
+                std::cout << std::format("└───────┘ ");
+            } else {
+                std::cout << std::format("{:^9} ", "");
+            }
+        }
+        std::cout << "|" << std::endl;
+        
+        // Add spacing between card rows (except for last row)
+        if (row < maxCards - 1) {
+            std::cout << "| ";
+            for (size_t i = 0; i < 5; ++i) {
+                std::cout << std::format("{:^9} ", "");
+            }
+            std::cout << "|" << std::endl;
+        }
     }
 }
 
@@ -82,3 +161,28 @@ bool PlayerDeck::empty()
     return deck.empty();
 }
 
+Color PlayerDeck::MostCommonColorinDeck()
+{
+    std::map<Color, int> colorfreq = {
+        {Color::RED, 0},
+        {Color::GREEN, 0},
+        {Color::BLUE, 0},
+        {Color::YELLOW, 0},
+    };
+
+    for (const auto& card : deck)
+    {
+        Color color = card->getColor();
+        if (color != Color::NONE)
+            colorfreq[color]++;
+    }
+    
+
+    auto it = std::max_element(
+        colorfreq.begin(), 
+        colorfreq.end(),
+        [](const auto& a, const auto& b) { return a.second > b.second; }
+    );
+
+    return it->first;
+}

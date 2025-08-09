@@ -28,6 +28,10 @@ bool hasWon();
 
 virtual bool ishuman() const;
 
+Color MostCommonColorinDeck();
+
+virtual ~Player() = default;
+
 };
 
 class Human : public Player

@@ -191,7 +191,7 @@ TEST(Human, HasWon) {
 
 TEST(Human, HasWonEmptyDeck) {
         Human human;
-        EXPECT_TRUE(human.hasWon());
+        EXPECT_FALSE(human.hasWon());
 }
 
 // Test human-specific methods

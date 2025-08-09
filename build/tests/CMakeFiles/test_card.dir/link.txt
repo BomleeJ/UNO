@@ -1,1 +1,0 @@
-/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/test_card.dir/__/src/Card.cpp.o CMakeFiles/test_card.dir/test_card.cpp.o -o ../bin/test_card  ../lib/libgtest.a ../lib/libgtest_main.a ../lib/libgtest.a

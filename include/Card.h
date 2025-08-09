@@ -8,7 +8,7 @@ enum class Color { RED, GREEN, BLUE, YELLOW, NONE};
 enum class Label {
     Zero, One, Two, Three, Four, Five, Six, Seven, Eight, Nine,
     Skip, Reverse, DrawTwo,
-    Wild, WildDrawFour
+    Wild, WildDrawFour, WildTemp //This is a hidden Wild Card that is associated with a Color
 };
 
 class Card {
@@ -16,11 +16,6 @@ class Card {
     Label label; // 0-9, SKIP, REVERSE, +4, +2
     bool wild;
     bool special;
-
-    std::string ColortoString() const;
-    std::string LabeltoString() const;
-
-
 
 public:
     Card(Color color, Label label):
@@ -36,7 +31,7 @@ public:
             special = true;
         }
 
-        if (label == Label::Wild || label == Label::WildDrawFour)
+        if (label == Label::Wild || label == Label::WildDrawFour || label == Label::WildTemp)
         {
             wild = true;
         }
@@ -48,6 +43,9 @@ public:
     bool isvalid(const Card& other) const;
     bool isspecial() const { return special; }
     bool iswild() const { return wild; }
+
+    std::string ColortoString() const;
+    std::string LabeltoString() const;
     
     Color getColor() const;
     Label getLabel() const;
