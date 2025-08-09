@@ -28,10 +28,9 @@ void PlayerDeck::add(std::unique_ptr<Card> card)
 
 void PlayerDeck::print()
 {
-    // Group cards by color
+
     std::map<Color, std::vector<std::string>> colorGroups;
-    
-    // Initialize all color groups
+
     colorGroups[Color::RED] = {};
     colorGroups[Color::BLUE] = {};
     colorGroups[Color::GREEN] = {};
@@ -51,7 +50,6 @@ void PlayerDeck::print()
         colorGroups[color].push_back(label);
     }
     
-    // Find the maximum number of cards in any color group
     size_t maxCards = 0;
     for (const auto& [color, cards] : colorGroups) {
         maxCards = std::max(maxCards, cards.size());
